@@ -39,7 +39,7 @@ mpi4py==3.1.4
 ----chinese-llama-plus-lora-7b：#中文llama-7b的lora权重
 ----chinese-alpaca-plus-lora-7b：#中文alpaca-7b的lora权重
 ----chinese-alpaca-7b：#合并lora后的最终的模型
-----tokenizer.model：#7B文件
+----tokenizer.model：#原始llama的7B文件
 ----convert_llama_weights_to_hf.py  #llama转换为hugging face格式
 ----merge_llama_with_chinese_lora.py  #合并lora到预训练模型
 --tools
