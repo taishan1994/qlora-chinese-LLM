@@ -86,6 +86,22 @@ python qlora.py --model_name="chinese_bloom" --model_name_or_path="./model_hub/B
 python chat.py --model_name "chatglm" --base_model "./model_hub/chatglm-6b" --tokenizer_path "./model_hub/chatglm-6b" --lora_model "./output/chatglm/adapter_model" --with_prompt --interactive
 ```
 
+# 补充
+
+- **怎么训练自己的数据？** 数据格式为：
+
+	```python
+	{
+	    "data": [
+	        {"instruction":"", "input":"", "output":""},
+	        {"instruction":"", "input":"", "output":""},
+	        ...
+	    ]
+	}
+	```
+
+	然后在qlora.py里面定义数据的地方加上自己的数据集即可。最后运行指令的时候自己定义相关的参数。
+
 # 参考
 
 > [liucongg/ChatGLM-Finetuning: 基于ChatGLM-6B模型，进行下游具体任务微调，涉及Freeze、Lora、P-tuning等 (github.com)](https://github.com/liucongg/ChatGLM-Finetuning)
