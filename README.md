@@ -1,6 +1,8 @@
 # qlora-chinese-example
 使用qlora对中文大语言模型进行微调。
 
+使用qlora对baichuan-7b进行微调，代码更加简洁：https://github.com/taishan1994/baichuan-Qlora-Tuning
+
 # 依赖
 
 ```python
